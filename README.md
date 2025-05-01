@@ -1,2 +1,7 @@
-# ai-agents
-This repository contains all the experimentations done to explore various ai agent frameworks
+# AI agent frameworks
+
+This repository contains all the experimentations done to explore various AI agent frameworks
+
+## Frameworks
+
+- LangGraph
