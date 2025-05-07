@@ -16,8 +16,6 @@ from react_agent.tools import TOOLS
 from react_agent.utils import load_chat_model
 
 # Define the function that calls the model
-
-
 async def call_model(state: State) -> Dict[str, List[AIMessage]]:
     """Call the LLM powering our "agent".
 
