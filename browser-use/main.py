@@ -1,7 +1,9 @@
-from langchain_openai import ChatOpenAI
-from browser_use import Agent
 import asyncio
+import os
+
+from browser_use import Agent
 from dotenv import load_dotenv
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
@@ -9,7 +11,9 @@ load_dotenv()
 async def main():
     agent = Agent(
         task="Compare the price of gpt-4o and DeepSeek-V3",
-        llm=ChatOpenAI(model="gpt-4o"),
+        llm=ChatOpenAI(
+            model="gpt-4o", temperature=0, api_key=os.getenv("OPENAI_API_KEY")
+        ),
     )
     await agent.run()
 
