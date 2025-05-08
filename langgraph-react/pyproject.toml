@@ -39,6 +39,7 @@ python-preference = "managed"
 resolution = "highest"
 
 [tool.ruff]
+extend-include = ["*.ipynb"]
 lint.select = [
     "E",    # pycodestyle
     "F",    # pyflakes
