@@ -15,7 +15,8 @@ async def main():
             model="gpt-4o", temperature=0, api_key=os.getenv("OPENAI_API_KEY")
         ),
     )
-    await agent.run()
+    result = await agent.run()
+    print(result)
 
 
 if __name__ == "__main__":
